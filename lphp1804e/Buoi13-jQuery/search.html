@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Search jQuery</title>
+</head>
+<body>
+	<label>Search</label>
+	<input type="text" name="search" id="search" />
+	<table border="1" cellpadding="10">
+		<thead>
+			<th>Name</th>
+			<th>Address</th>
+			<th>Phone</th>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Tuan</td>
+				<td>Ha Noi</td>
+				<td>12345678</td>
+			</tr>
+			<tr>
+				<td>Anh</td>
+				<td>HCM</td>
+				<td>234234243</td>
+			</tr>
+			<tr>
+				<td>T3H</td>
+				<td>Ha Noi</td>
+				<td>123123</td>
+			</tr>
+			<tr>
+				<td>LPHP1804E</td>
+				<td>Da Nang</td>
+				<td>000000</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#search').on('keyup', function() {
+			var inputValue = $('#search').val().toLowerCase();
+			
+			$('tbody tr').filter(function() {
+				$(this).toggle(
+					$(this).text().toLowerCase().indexOf(inputValue) > -1
+					);
+			});
+		});
+	});
+</script>
+</html>

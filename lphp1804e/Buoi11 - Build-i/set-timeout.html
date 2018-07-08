@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SET TIMEOUT</title>
+</head>
+<body>
+<button id="show">Cho 3s de hien thi anh</button>
+<p id="time3"></p>
+<p id="time2"></p>
+<p id="time1"></p>
+</body>
+<script type="text/javascript">
+	// Tao anh va append vao body sau 3s
+	function createImage() {
+		var img = document.createElement('img');
+		img.src = "https://www.w3schools.com/w3css/img_lights.jpg";
+		document.body.append(img);
+		// sau khi hien thi anh -> an button
+		document.getElementById('show').style.display = 'none';
+	}
+
+	// Tao event cho button
+	var button = document.getElementById('show');
+	button.onclick = function () {
+		showImage();
+	}
+	
+	// thuc hien dem nguoc va hien thi anh sau khi click
+	function showImage() {
+		for(var i = 3; i > 0; i--) {
+			var p = document.getElementById('time' + i);
+			p.innerHTML = i + " ";
+		}
+
+		setTimeout(function() {
+			createImage();
+		}, 3000);
+	}
+</script>
+</html>

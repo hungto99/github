@@ -1,0 +1,42 @@
+.div-cha {
+	background-color: red;
+}
+
+.div-con {
+	border-radius: 10px;
+}
+
+.in-dam {
+	font-style: italic;
+}
+
+.unorder-list li:not(:last-child) {
+	font-weight: 600;
+}
+
+.unorder-list li:first-child {
+	color: blue;
+}
+/*
+.order-list:hover li {
+	background-color: blue;
+	display: block;
+}*/
+
+.order-list {
+	position: relative;
+}
+
+.unorder-list {
+	position: absolute;
+	display: none;
+	list-style: none;
+}
+
+.order-list:hover .unorder-list {
+	display: inline-block;
+}
+
+.order-list li {
+	display: block;
+}

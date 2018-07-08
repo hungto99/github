@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS + HTML</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<!-- <style type="text/css">
+		div {
+			width: 500px;
+		}
+
+		.link:hover {
+				color: red;
+		}
+		.link:visited {
+			color: black;
+		}
+	</style> -->
+	<!-- HEADER -->
+	<div class="header" style="border: 1px solid;">
+		<h1 class="title">HEADER</h1>
+		<p class="desc">Description1</p>
+		<p class="desc">Description2</p>
+	</div>
+	<!-- END HEADER -->
+
+	<!-- BODY -->
+	<div 
+		class="body" 
+		style="
+			border: 1px solid; 
+			background: navajowhite;
+			text-decoration: underline;
+			text-align: center;
+			font-family: helvetica;
+		"
+	>
+		<h2 style="color: red;">BODY</h2>
+		<h3 class="title">Desc</h3>
+		<p>DescDescDescDescDescDesc</p>
+		<a class="link" 
+			href="https://www.google.com"
+		>GOOGLE</a>
+	</div>
+	<!-- END BODY -->
+
+	<!-- FOOTER -->
+	<div 
+		class="footer relative" 
+		style="
+			border: 1px solid;
+			background-image: url(./images/image.jpeg);
+			height: 300px;
+		"
+	>
+		<!-- <h3 class="desc">footer</h3> -->
+		<div class="absolute red">
+			<p>abc</p>
+		</div>
+	</div>
+	
+	<!-- END FOOTER -->
+</body>
+</html>

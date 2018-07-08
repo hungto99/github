@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Set Interval</title>
+</head>
+<body>
+	<button onclick="stop()">STOP</button>
+	<button onclick="start()">START</button>
+</body>
+<script type="text/javascript">
+	// Khai bao bien run toan cuc
+	var run;
+
+	// Khi click START goi start() -> chay setInterval cho function printPTag()
+	function start() {
+		run = setInterval(function(){printPTag()}, 1000);
+	}
+
+	// Khi click STOP thi clearInterval bien run
+	function stop() {
+		clearInterval(run);
+	}
+
+	// In ra the p
+	function printPTag() {
+		var p = document.createElement('p').innerHTML = "T3H";
+		document.body.append(p);
+	}
+</script>
+</html>

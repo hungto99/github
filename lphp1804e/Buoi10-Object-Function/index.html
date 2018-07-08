@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Object</title>
+</head>
+<body>
+	<p onclick="changeText('p')">T3H</p>
+	<h3 onclick="changeText('h3')"> T3H in H3</h3>
+	<a href="https://google.com" target="_blank" id="link">Link</a>
+</body>
+<script type="text/javascript">
+	// Khai bao
+	var object1 = new Object();
+
+	var object2 = {};
+
+	// Gan gia tri cho thuoc tinh
+	object1 = {
+		name: {
+
+		},
+		phone: "",
+		address: ""
+	};
+
+	object2.name = "";
+	object2.phone = "";
+	object2.address = "";
+	object2.password = "";
+
+	// document
+	// var p = document.getElementById('tag_p');
+	// var a = document.getElementById('link');
+	// var text = document.getElementsByClassName('text');	
+
+	// console.log("object1", object1);
+	// console.log("doi tuong p", p.attributes);
+	// console.log("doi tuong text", text);
+
+	function changeText(tenThe) {
+		document.getElementsByTagName(tenThe)[0].innerHTML = "1804E";
+		// for(var i = 0; i < text.length; i++) {
+		// 	text[i].innerHTML = "1804E";
+		// }
+	}
+</script>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Layout HTML T3H</title>
+
+    <!-- some tag in head -->
+    <meta charset="utf-8"> <!-- Khai bao thong tin trang web -->
+    <link rel="stylesheet" type="text/css" href=""> <!-- Duong dan den file css -->
+    <script type="text/javascript"></script> <!-- Duong dan den file javascript -->
+</head>
+<body>
+    <h1> Title h1</h1>
+    <h3> Sub Title h3</h3>
+
+    <!-- some tag in body -->
+    <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+    </p> <!-- Doan van ban -->
+
+    <table border="1px" cellpadding="10" cellspacing="0">
+        <thead>
+            <th>column 1</th>
+            <th>column 2</th>
+            <th>column 3</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>data 1</td>
+                <td>data 2</td>
+                <td>data 3</td>
+            </tr>
+            <tr>
+                <td>data 4</td>
+                <td>data 5</td>
+                <td>data 6</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>data foot 1</td>
+                <td>data foot 2</td>
+                <td>data foot 3</td>
+            </tr>
+        </tfoot>
+    </table> <!-- Dinh dang bang -->
+
+    <table border="1" cellspacing="0" cellpadding="10">
+        <tr>
+            <td colspan="2">1 - 1 vs 2</td>
+            <td>1 - 3</td>
+        </tr>
+        <tr>
+            <td>2 - 1</td>
+            <td>2 - 2</td>
+            <td>2 - 3</td>
+        </tr>
+    </table> <!-- Colspan: Noi 2 hoac nhieu o tinh tu o nay -->
+
+    <table border="1" cellspacing="0" cellpadding="10">
+            <tr>
+                <td rowspan="2">1 - 1</td>
+                <td>1 - 2</td>
+                <td>1 - 3</td>
+            </tr>
+            <tr>
+                <td>2 - 2</td>
+                <td>2 - 3</td>
+            </tr>
+        </table> <!-- Rowspan: Noi 2 hoac nhieu o tinh tu o nay -->
+
+    <ol>
+        <li>row 1</li>
+        <li>row 2</li>
+        <li>
+            <ol>
+                <li>row 3 - 1</li>
+                <li>row 3 - 2</li>
+                <li>row 3 - 3</li>
+            </ol>
+        </li>
+    </ol> <!-- List co thu tu -->
+
+    <ul>
+        <li>row 1</li>
+        <li>row 2</li>
+        <li>row 3</li>
+    </ul> <!-- List khong thu tu -->
+
+    <dl>
+        <h3>WEBSITE</h3>
+        <dt>HTML</dt>
+        <dd>- Bo khung cua website</dd>
+        <dt>CSS</dt>
+        <dd>- Bo da cua website</dd>
+        <dt>JavaScript</dt>
+        <dd>- Bo canh cua website</dd>
+        <dt>Ngon ngu server-side (PHP, Ruby, Java)</dt>
+        <dd>- Linh hon cua website</dd>
+    </dl> <!-- Dinh dang list -->
+
+    <a href="google.com" title="click and fly to google" target="_blank">Link to google</a>
+
+    <form method="get" action="#" name="">
+        <input type="text" name="user_name" placeholder="Type username">
+        <input type="submit" name="submit" value="Submit">
+        <input type="reset" name="reset" value="Reset">
+        <input type="button" name="">
+        <button></button>
+    </form>
+</body>
+</html>

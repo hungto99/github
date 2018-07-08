@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>image zoom</title>
+</head>
+<body>
+	<img src="https://www.gettyimages.ca/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg">
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('img').on('mouseenter', function() {
+			$('img').css('width', '1000px');
+		});
+		$('img').on('mouseleave', function() {
+			$('img').css('width', '500px');
+		});
+
+		setTimeout(function() {
+			$('img').attr('src', 'https://www.w3schools.com/w3css/img_lights.jpg');
+		}, 2000);
+	});
+</script>
+</html>

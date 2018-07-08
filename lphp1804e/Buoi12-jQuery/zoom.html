@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Zoom Image by jQuery</title>
+</head>
+<body>
+	<img id="image" src="https://www.w3schools.com/css/img_lights.jpg" width="300">
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function () {
+		var image = $('#image');
+		image.on('mouseenter', function () {
+			image.css('width', '600px');
+		});
+
+		image.on('mouseleave', function () {
+			image.css('width', '300px');
+		});
+	});
+</script>
+</html>

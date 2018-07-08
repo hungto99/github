@@ -1,0 +1,59 @@
+div {
+	width: 700px;
+}
+
+.red {
+	background: red;
+}
+
+.link:hover {
+		color: black;
+}
+/*.link:visited {
+	color: black;
+}*/
+
+.title {
+	padding: 10px 20px 30px 40px;
+}
+
+.desc {
+	text-decoration: underline;
+	/*display: inline;*/
+	display: inline-block;
+}
+
+.footer {
+	margin: 10px;
+	border-radius: 20px;
+}
+
+.relative {
+	position: relative;
+}
+
+.absolute {
+	height: 30px;
+	width: 10px;
+	position: absolute;
+	top: 30px;
+	left: 30px;
+}
+
+/*position*/
+.cha {
+	height: 300px;
+	width: 500px;
+	border: 1px solid green;
+	position: relative;
+	background-color: blue;
+}
+
+.con {
+	height: 50px;
+	width: 50px;
+	background-color: red;
+	position: absolute;
+	bottom: 20px;
+	right: 30px;
+}

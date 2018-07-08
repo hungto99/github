@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery - Validation</title>
+</head>
+<body>
+	<form id="form">
+		<input id="username" type="text" name="username" />
+		<input id="password" type="password" name="password" />
+		<input id="sm" type="submit" name="submit" value="SUBMIT" />
+		<input id="rs" type="reset" name="reset" />
+	</form>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#form').validate({
+			rules: {
+				username: {
+					required: true,
+					maxlength: 32,
+					minlength: 6
+				},
+				password: 'required'
+			},
+			messages: {
+				username: {
+					maxlength: 'max',
+					minlength: 'min',
+					required: 'Nhap please'
+				},
+				password: 'Vui long nhap pw'
+			}
+		})
+	});
+</script>
+</html>

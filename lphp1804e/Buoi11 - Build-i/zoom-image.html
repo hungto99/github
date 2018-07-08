@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ZOOM IMAGE</title>
+</head>
+<body>
+	<img src="https://www.w3schools.com/w3css/img_lights.jpg" width="200">
+</body>
+<script type="text/javascript">
+	// onmouseover
+	// onmouseout
+	// Tim the img chua anh
+	var img = document.getElementsByTagName('img')[0];
+
+	// Them hanh dong di chuot vao anh
+	img.onmouseover = function () {
+		img.width = '400';
+	}
+
+	// Them hanh dong di chuot ra khoi anh
+	img.onmouseout = function () {
+		img.width = '200';
+	}
+</script>
+</html>

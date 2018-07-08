@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<p id="test">T3H</p>
+	<p class="test">1809</p>
+	<p>E</p>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		var getById = $('#test');
+		console.log('id', getById);
+		console.log('class', $('.test'));
+		console.log('tagName', $('p'));
+
+		// getById.css('color', 'red');
+		$('.test').css('display', 'none');
+		$('p').css('font-size', '40px');
+
+
+		setTimeout(function() {
+			getById.text("123456");
+			getById.addClass('yellow');
+		}, 2000);
+
+		setInterval(function() {
+			$('.test').css('display', 'block');
+		}, 5000);
+	});
+</script>
+</html>

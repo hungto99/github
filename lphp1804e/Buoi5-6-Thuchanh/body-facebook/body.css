@@ -1,0 +1,172 @@
+body {
+	width: 1300px;
+	/*height: 1000px;*/
+	/*padding: 0 40px 0 40px;*/
+	padding: 0 40px;
+	background-color: #E6E8EB;
+}
+/*sidebar*/
+.sidebar {
+	width: 200px;
+	height: 100%;
+	display: inline-block;
+	float: left;
+}
+
+.your-info img {
+	border-radius: 50%;
+	float: left;
+}
+
+.your-info span {
+	display: inline-block;
+	margin-top: 3px;
+	padding-left: 5px;
+}
+
+.sidebar ul {
+	list-style: none;
+	padding: 0;
+}
+
+.sidebar ul li {
+	padding: 5px 0 5px 3px;
+}
+
+.sidebar li:hover {
+	background-color: #fff;
+	cursor: pointer;
+	border-radius: 3px;
+}
+
+.sidebar ul li i {
+	color: #395CA9;
+}
+
+/*timeline*/
+.timeline {
+	width: 600px;
+	height: 100%;
+	display: inline-block;
+	float: left;
+}
+
+.create-post {
+	margin-bottom: 12px;
+	border: 1px solid darkgray;
+	border-radius: 3px;
+}
+
+.create-post ul {
+	list-style: none;
+	margin: 0;
+	padding-left: 5px;
+}
+
+.create-post ul li {
+	display: inline-block;
+	padding: 5px;
+}
+
+.option ul li:not(:first-child) {
+	border-left: 1px solid;
+}
+
+.buttons {
+	background-color: #fff;
+}
+
+.buttons ul li {
+	background-color: #F5F6F8;
+	border-radius: 10px;
+}
+
+.write-post {
+	background-color: #fff;
+	padding: 5px;
+}
+
+.write-post img {
+	width: 40px;
+	border-radius: 50%;
+	float: left;
+}
+
+.write-post input {
+	height: 40px;
+	border: none;
+	width: 530px;
+	padding-left: 10px;
+}
+
+.posts {
+	padding: 12px;
+	background-color: #fff;
+	border: 1px solid darkgray;
+	border-radius: 3px;
+}
+
+.info img {
+	width: 40px;
+	border-radius: 50%;
+}
+
+.info ul {
+	list-style: none;
+	margin: 0;
+	padding-left: 5px;
+	display: inline-block;
+}
+
+/*.info ul li:first-child {
+	font-weight: bold;
+	cursor: pointer;
+	color: #395CA9;
+}
+*/
+
+.info-name {
+	font-weight: bold;
+	cursor: pointer;
+	color: #395CA9;
+}
+
+.info-name:hover {
+	text-decoration: underline;
+}
+
+.content {
+	margin: 5px 0;
+}
+
+.image img {
+	width: 100%;
+}
+
+/*news*/
+.news {
+	width: 300px;
+	height: 100%;
+	display: inline-block;
+	padding-left: 40px;
+	background-color: #fff;
+	margin-left: 12px;
+	border: 1px solid darkgray;
+	border-radius: 3px;
+}
+
+.news ul {
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+}
+
+.news-info li img {
+	border-radius: 50%;
+	width: 50px;
+	display: inline-block;
+}
+
+.news-info li ul {
+	display: inline-block;
+}

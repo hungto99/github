@@ -1,0 +1,40 @@
+body {
+	width: 1300px;
+}
+
+.header {
+	height: 300px;
+	background: green;
+}
+
+.body {
+	height: 500px;
+	background: grey;
+}
+
+.body .body_left {
+	background: yellow;
+	width: 500px;
+	display: inline-block;
+	height: 300px;
+}
+
+.body p {
+	color: white;
+}
+
+.body .body_right {
+	background: red;
+	width: 300px;
+	display: inline-block;
+}
+
+.body_left:hover .hover {
+	display: none;
+}
+
+.footer {
+	height: 200px;
+	background: black;
+}
+

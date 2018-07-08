@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>event trong jQuery</title>
+</head>
+<body>
+	<p>The nay can an</p>
+	<!-- <p>The nay can </p> -->
+	<button id="hide">HIDE</button>
+	<button id="show">SHOW</button>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		var text = $('p');
+		// console.log(text);
+		$('#hide').on('click', function() {
+			// text.hide();
+			text.fadeOut(5000);
+		});
+		$('#show').on('click', function() {
+			// text.show();
+			text.fadeIn(3000);
+		});
+	});
+</script>
+</html>

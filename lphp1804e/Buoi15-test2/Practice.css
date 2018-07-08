@@ -1,0 +1,58 @@
+body{
+	width: 1200px;
+	margin: 0 auto;
+}
+.body{
+	width: 1100px;
+	margin: 0 auto;
+}
+.logo{
+	margin: 0 auto;
+}
+.channels img{
+	height: 30px;
+	width: 30px;
+	float: right;
+}
+.logolast {
+	height: 170px;
+	width: 230px;
+	float: left;
+	display: inline-block;
+	margin-right: 15px;
+}
+.table{
+	float: left;
+	display: inline-block;
+	height: 85px;
+	width: 175px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+.table ul {
+	margin-top: 0px;
+	list-style: none;
+	border:1px solid black;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+.location{
+	display: inline-block;
+	float: left;
+	width: 400px;
+}
+.map{
+	display: inline-block;
+	float: left;
+	width: 400px;
+}.last img {
+	height: 50px;
+	width: 100px;
+}
+.last ul{
+	list-style: none;
+}
+.last ul li
+{
+	float: left;
+}
